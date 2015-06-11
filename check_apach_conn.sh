@@ -1,6 +1,6 @@
 #!/bin/bash
 # $Author: Mike Yom<mikeyom@gmail.com>
-# Nagios plugin script for OPS team checking the established apache connections.
+# Nagios plugin script send Nagios alert if established apache connections is over 200 connections.
 
 CONN=`sudo netstat -plan | grep ESTABLISHED | grep apache2 | wc -l`
 
